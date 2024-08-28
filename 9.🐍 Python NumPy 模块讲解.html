@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="🐍 Python NumPy 模块讲解NumPy 是 Python 中一个强大的科学计算库，特别擅长处理大型多维数组和矩阵运算。让我们一起来看看吧！  1. 安装 NumPy首先，你需要安装 NumPy。打开终端或命令提示符，运行以下命令： 1pip install numpy   2. 导入 NumPy导入 NumPy 模块通常使用别名 np： 1import numpy as np   3.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/9.%F0%9F%90%8D%20Python%20NumPy%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="🐍 Python NumPy 模块讲解NumPy 是 Python 中一个强大的科学计算库，特别擅长处理大型多维数组和矩阵运算。让我们一起来看看吧！  1. 安装 NumPy首先，你需要安装 NumPy。打开终端或命令提示符，运行以下命令： 1pip install numpy   2. 导入 NumPy导入 NumPy 模块通常使用别名 np： 1import numpy as np   3.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-28T12:00:28.686Z">
+<meta property="article:modified_time" content="2024-06-10T14:22:48.234Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/9.%F0%9F%90%8D%20Python%20NumPy%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html" class="article-date">
+  <time class="dt-published" datetime="2024-08-28T12:00:28.686Z" itemprop="datePublished">2024-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="🐍-Python-NumPy-模块讲解"><a href="#🐍-Python-NumPy-模块讲解" class="headerlink" title="🐍 Python NumPy 模块讲解"></a>🐍 Python NumPy 模块讲解</h3><p>NumPy 是 Python 中一个强大的科学计算库，特别擅长处理大型多维数组和矩阵运算。让我们一起来看看吧！</p>
+<hr>
+<h4 id="1-安装-NumPy"><a href="#1-安装-NumPy" class="headerlink" title="1. 安装 NumPy"></a>1. 安装 NumPy</h4><p>首先，你需要安装 NumPy。打开终端或命令提示符，运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install numpy</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="2-导入-NumPy"><a href="#2-导入-NumPy" class="headerlink" title="2. 导入 NumPy"></a>2. 导入 NumPy</h4><p>导入 NumPy 模块通常使用别名 <code>np</code>：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="3-创建数组"><a href="#3-创建数组" class="headerlink" title="3. 创建数组"></a>3. 创建数组</h4><p>NumPy 提供了多种创建数组的方法：</p>
+<ul>
+<li><strong>从列表创建数组</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">array = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">print</span>(array)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1 2 3 4 5]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>创建全零数组</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">zeros = np.zeros((<span class="number">2</span>, <span class="number">3</span>))  <span class="comment"># 2x3 的全零数组</span></span><br><span class="line"><span class="built_in">print</span>(zeros)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[0. 0. 0.]</span><br><span class="line"> [0. 0. 0.]]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>创建全一数组</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ones = np.ones((<span class="number">3</span>, <span class="number">2</span>))  <span class="comment"># 3x2 的全一数组</span></span><br><span class="line"><span class="built_in">print</span>(ones)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[[1. 1.]</span><br><span class="line"> [1. 1.]</span><br><span class="line"> [1. 1.]]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>创建范围数组</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">range_array = np.arange(<span class="number">0</span>, <span class="number">10</span>, <span class="number">2</span>)  <span class="comment"># 从 0 到 10，步长为 2</span></span><br><span class="line"><span class="built_in">print</span>(range_array)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[0 2 4 6 8]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="4-数组操作"><a href="#4-数组操作" class="headerlink" title="4. 数组操作"></a>4. 数组操作</h4><p>NumPy 支持各种数组操作：</p>
+<ul>
+<li><strong>数组形状</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">array = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line"><span class="built_in">print</span>(array.shape)  <span class="comment"># 输出 (2, 3)</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>数组重塑</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">reshaped = array.reshape((<span class="number">3</span>, <span class="number">2</span>))  <span class="comment"># 重塑为 3x2 数组</span></span><br><span class="line"><span class="built_in">print</span>(reshaped)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[[1 2]</span><br><span class="line"> [3 4]</span><br><span class="line"> [5 6]]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>数组切片</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">slice</span> = array[<span class="number">0</span>, <span class="number">1</span>:<span class="number">3</span>]  <span class="comment"># 第一行，第二到第三列</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">slice</span>)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[2 3]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="5-数组运算"><a href="#5-数组运算" class="headerlink" title="5. 数组运算"></a>5. 数组运算</h4><p>NumPy 支持数组的各种运算：</p>
+<ul>
+<li><strong>数组加法</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">b = np.array([<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line">result = a + b</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[5 7 9]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>数组乘法</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">result = a * b</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ 4 10 18]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>矩阵乘法</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">matrix1 = np.array([[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]])</span><br><span class="line">matrix2 = np.array([[<span class="number">5</span>, <span class="number">6</span>], [<span class="number">7</span>, <span class="number">8</span>]])</span><br><span class="line">result = np.dot(matrix1, matrix2)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[19 22]</span><br><span class="line"> [43 50]]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="6-常用函数"><a href="#6-常用函数" class="headerlink" title="6. 常用函数"></a>6. 常用函数</h4><ul>
+<li><strong>求和</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">array = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">sum</span> = np.<span class="built_in">sum</span>(array)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">sum</span>)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">15</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>平均值</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mean = np.mean(array)</span><br><span class="line"><span class="built_in">print</span>(mean)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3.0</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>标准差</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">std = np.std(array)</span><br><span class="line"><span class="built_in">print</span>(std)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.4142135623730951</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="7-处理缺失值"><a href="#7-处理缺失值" class="headerlink" title="7. 处理缺失值"></a>7. 处理缺失值</h4><ul>
+<li><strong>NaN 替换</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">array = np.array([<span class="number">1</span>, <span class="number">2</span>, np.nan, <span class="number">4</span>])</span><br><span class="line">nan_replaced = np.nan_to_num(array)</span><br><span class="line"><span class="built_in">print</span>(nan_replaced)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1. 2. 0. 4.]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><strong>安装和导入</strong>：<code>pip install numpy</code> 和 <code>import numpy as np</code></li>
+<li><strong>创建数组</strong>：<code>np.array()</code>、<code>np.zeros()</code>、<code>np.ones()</code>、<code>np.arange()</code></li>
+<li><strong>数组操作</strong>：<code>reshape()</code>、数组切片</li>
+<li><strong>数组运算</strong>：加法、乘法、矩阵乘法</li>
+<li><strong>常用函数</strong>：<code>np.sum()</code>、<code>np.mean()</code>、<code>np.std()</code></li>
+<li><strong>处理缺失值</strong>：<code>np.nan_to_num()</code></li>
+</ul>
+<p>希望这个简洁的讲解对你有帮助！如果有问题，随时问我哦！😊</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/9.%F0%9F%90%8D%20Python%20NumPy%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html" data-id="cm0dt1x12000cfstmekt1fun9" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

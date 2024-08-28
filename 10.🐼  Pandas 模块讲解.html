@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="🐼  Pandas 模块讲解Pandas 是 Python 中一个强大的数据处理和分析库，非常适合处理表格数据。让我们一起来看看吧！  1. 安装 Pandas首先，你需要安装 Pandas。打开终端或命令提示符，运行以下命令： 1pip install pandas   2. 导入 Pandas导入 Pandas 模块通常使用别名 pd： 1import pandas as np   3. 创">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/10.%F0%9F%90%BC%20%20Pandas%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="🐼  Pandas 模块讲解Pandas 是 Python 中一个强大的数据处理和分析库，非常适合处理表格数据。让我们一起来看看吧！  1. 安装 Pandas首先，你需要安装 Pandas。打开终端或命令提示符，运行以下命令： 1pip install pandas   2. 导入 Pandas导入 Pandas 模块通常使用别名 pd： 1import pandas as np   3. 创">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-28T12:00:28.693Z">
+<meta property="article:modified_time" content="2024-06-10T14:24:29.629Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/10.%F0%9F%90%BC%20%20Pandas%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html" class="article-date">
+  <time class="dt-published" datetime="2024-08-28T12:00:28.693Z" itemprop="datePublished">2024-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="🐼-Pandas-模块讲解"><a href="#🐼-Pandas-模块讲解" class="headerlink" title="🐼  Pandas 模块讲解"></a>🐼  Pandas 模块讲解</h3><p>Pandas 是 Python 中一个强大的数据处理和分析库，非常适合处理表格数据。让我们一起来看看吧！</p>
+<hr>
+<h4 id="1-安装-Pandas"><a href="#1-安装-Pandas" class="headerlink" title="1. 安装 Pandas"></a>1. 安装 Pandas</h4><p>首先，你需要安装 Pandas。打开终端或命令提示符，运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pandas</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="2-导入-Pandas"><a href="#2-导入-Pandas" class="headerlink" title="2. 导入 Pandas"></a>2. 导入 Pandas</h4><p>导入 Pandas 模块通常使用别名 <code>pd</code>：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="3-创建数据结构"><a href="#3-创建数据结构" class="headerlink" title="3. 创建数据结构"></a>3. 创建数据结构</h4><p>Pandas 提供了两种主要的数据结构：<code>Series</code> 和 <code>DataFrame</code>。</p>
+<ul>
+<li><strong>Series</strong>：一维数据</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="built_in">print</span>(data)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">0    1</span><br><span class="line">1    2</span><br><span class="line">2    3</span><br><span class="line">3    4</span><br><span class="line">4    5</span><br><span class="line">dtype: int64</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>DataFrame</strong>：二维数据（表格）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">data = &#123;</span><br><span class="line">    <span class="string">&quot;Name&quot;</span>: [<span class="string">&quot;Alice&quot;</span>, <span class="string">&quot;Bob&quot;</span>, <span class="string">&quot;Charlie&quot;</span>],</span><br><span class="line">    <span class="string">&quot;Age&quot;</span>: [<span class="number">25</span>, <span class="number">30</span>, <span class="number">35</span>],</span><br><span class="line">    <span class="string">&quot;City&quot;</span>: [<span class="string">&quot;New York&quot;</span>, <span class="string">&quot;Los Angeles&quot;</span>, <span class="string">&quot;Chicago&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame(data)</span><br><span class="line"><span class="built_in">print</span>(df)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">      Name  Age         City</span><br><span class="line">0    Alice   25     New York</span><br><span class="line">1      Bob   30  Los Angeles</span><br><span class="line">2  Charlie   35      Chicago</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="4-数据操作"><a href="#4-数据操作" class="headerlink" title="4. 数据操作"></a>4. 数据操作</h4><ul>
+<li><strong>读取数据</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">&quot;data.csv&quot;</span>)  <span class="comment"># 读取 CSV 文件</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>查看数据</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(df.head())  <span class="comment"># 查看前5行</span></span><br><span class="line"><span class="built_in">print</span>(df.tail())  <span class="comment"># 查看后5行</span></span><br><span class="line"><span class="built_in">print</span>(df.info())  <span class="comment"># 查看数据概要</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>选择数据</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(df[<span class="string">&quot;Name&quot;</span>])        <span class="comment"># 选择一列</span></span><br><span class="line"><span class="built_in">print</span>(df[[<span class="string">&quot;Name&quot;</span>, <span class="string">&quot;Age&quot;</span>]])  <span class="comment"># 选择多列</span></span><br><span class="line"><span class="built_in">print</span>(df.iloc[<span class="number">0</span>])        <span class="comment"># 选择第一行</span></span><br><span class="line"><span class="built_in">print</span>(df.iloc[<span class="number">0</span>:<span class="number">2</span>])      <span class="comment"># 选择前两行</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>过滤数据</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adults = df[df[<span class="string">&quot;Age&quot;</span>] &gt; <span class="number">30</span>]</span><br><span class="line"><span class="built_in">print</span>(adults)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="5-数据清洗"><a href="#5-数据清洗" class="headerlink" title="5. 数据清洗"></a>5. 数据清洗</h4><ul>
+<li><strong>处理缺失值</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df.fillna(<span class="number">0</span>, inplace=<span class="literal">True</span>)  <span class="comment"># 将缺失值替换为0</span></span><br><span class="line">df.dropna(inplace=<span class="literal">True</span>)     <span class="comment"># 删除包含缺失值的行</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>删除重复值</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.drop_duplicates(inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>重命名列</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.rename(columns=&#123;<span class="string">&quot;Name&quot;</span>: <span class="string">&quot;Full Name&quot;</span>&#125;, inplace=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="6-数据分析"><a href="#6-数据分析" class="headerlink" title="6. 数据分析"></a>6. 数据分析</h4><ul>
+<li><strong>基本统计</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(df[<span class="string">&quot;Age&quot;</span>].mean())  <span class="comment"># 平均值</span></span><br><span class="line"><span class="built_in">print</span>(df[<span class="string">&quot;Age&quot;</span>].<span class="built_in">sum</span>())   <span class="comment"># 求和</span></span><br><span class="line"><span class="built_in">print</span>(df[<span class="string">&quot;Age&quot;</span>].describe())  <span class="comment"># 描述统计</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>分组</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grouped = df.groupby(<span class="string">&quot;City&quot;</span>).mean()</span><br><span class="line"><span class="built_in">print</span>(grouped)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="7-数据可视化"><a href="#7-数据可视化" class="headerlink" title="7. 数据可视化"></a>7. 数据可视化</h4><p>使用 Pandas 内置的可视化功能（需要 Matplotlib）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">df[<span class="string">&quot;Age&quot;</span>].plot(kind=<span class="string">&quot;bar&quot;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><strong>安装和导入</strong>：<code>pip install pandas</code> 和 <code>import pandas as pd</code></li>
+<li><strong>创建数据结构</strong>：<code>Series</code> 和 <code>DataFrame</code></li>
+<li><strong>数据操作</strong>：读取、查看、选择、过滤</li>
+<li><strong>数据清洗</strong>：处理缺失值、删除重复值、重命名列</li>
+<li><strong>数据分析</strong>：基本统计、分组</li>
+<li><strong>数据可视化</strong>：使用 Pandas 内置功能</li>
+</ul>
+<p>希望这个简洁的讲解对你有帮助！如果有问题，随时问我哦！😊</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/10.%F0%9F%90%BC%20%20Pandas%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html" data-id="cm0dt1x0v0001fstm4gql8kxb" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="📝 Python 文本分析文本分析是指对文本数据进行结构化和非结构化信息提取的过程。Python 提供了多种库和工具，使得文本分析变得更加简单和高效。本文将介绍 Python 中常用的文本分析工具和技术，包括文本预处理、文本分词、词频统计、情感分析和主题建模等。让我们开始吧！📚 文本预处理 📋文本清洗文本清洗是指去除文本中的噪声和无用信息，包括标点符号、特殊字符和HTML标签等。 12345">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/14.%F0%9F%93%9D%20Python%20%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="📝 Python 文本分析文本分析是指对文本数据进行结构化和非结构化信息提取的过程。Python 提供了多种库和工具，使得文本分析变得更加简单和高效。本文将介绍 Python 中常用的文本分析工具和技术，包括文本预处理、文本分词、词频统计、情感分析和主题建模等。让我们开始吧！📚 文本预处理 📋文本清洗文本清洗是指去除文本中的噪声和无用信息，包括标点符号、特殊字符和HTML标签等。 12345">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-28T12:00:28.718Z">
+<meta property="article:modified_time" content="2024-06-10T14:42:45.462Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/14.%F0%9F%93%9D%20Python%20%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90.html" class="article-date">
+  <time class="dt-published" datetime="2024-08-28T12:00:28.718Z" itemprop="datePublished">2024-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="📝-Python-文本分析"><a href="#📝-Python-文本分析" class="headerlink" title="📝 Python 文本分析"></a>📝 Python 文本分析</h1><p>文本分析是指对文本数据进行结构化和非结构化信息提取的过程。Python 提供了多种库和工具，使得文本分析变得更加简单和高效。本文将介绍 Python 中常用的文本分析工具和技术，包括文本预处理、文本分词、词频统计、情感分析和主题建模等。让我们开始吧！📚</p>
+<h2 id="文本预处理-📋"><a href="#文本预处理-📋" class="headerlink" title="文本预处理 📋"></a>文本预处理 📋</h2><h3 id="文本清洗"><a href="#文本清洗" class="headerlink" title="文本清洗"></a>文本清洗</h3><p>文本清洗是指去除文本中的噪声和无用信息，包括标点符号、特殊字符和HTML标签等。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">clean_text</span>(<span class="params">text</span>):</span><br><span class="line">    text = re.sub(<span class="string">r&#x27;[^\w\s]&#x27;</span>, <span class="string">&#x27;&#x27;</span>, text)  <span class="comment"># 去除标点符号</span></span><br><span class="line">    text = re.sub(<span class="string">r&#x27;\d+&#x27;</span>, <span class="string">&#x27;&#x27;</span>, text)      <span class="comment"># 去除数字</span></span><br><span class="line">    text = text.lower()                  <span class="comment"># 转换为小写</span></span><br><span class="line">    <span class="keyword">return</span> text</span><br></pre></td></tr></table></figure>
+
+<h3 id="停用词移除"><a href="#停用词移除" class="headerlink" title="停用词移除"></a>停用词移除</h3><p>停用词是指在文本分析中无意义的常用词，如“的”、“是”、“在”等，需要移除以减少分析的复杂性。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> nltk.corpus <span class="keyword">import</span> stopwords</span><br><span class="line"></span><br><span class="line">stop_words = <span class="built_in">set</span>(stopwords.words(<span class="string">&#x27;english&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">remove_stopwords</span>(<span class="params">text</span>):</span><br><span class="line">    words = text.split()</span><br><span class="line">    filtered_words = [word <span class="keyword">for</span> word <span class="keyword">in</span> words <span class="keyword">if</span> word <span class="keyword">not</span> <span class="keyword">in</span> stop_words]</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27; &#x27;</span>.join(filtered_words)</span><br></pre></td></tr></table></figure>
+
+<h2 id="文本分词-📝"><a href="#文本分词-📝" class="headerlink" title="文本分词 📝"></a>文本分词 📝</h2><h3 id="使用-NLTK-进行分词"><a href="#使用-NLTK-进行分词" class="headerlink" title="使用 NLTK 进行分词"></a>使用 NLTK 进行分词</h3><p>NLTK（Natural Language Toolkit）是 Python 中常用的自然语言处理库，可以用于分词、词性标注等任务。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> nltk.tokenize <span class="keyword">import</span> word_tokenize</span><br><span class="line"></span><br><span class="line">text = <span class="string">&quot;This is a sample sentence for tokenization.&quot;</span></span><br><span class="line">tokens = word_tokenize(text)</span><br><span class="line"><span class="built_in">print</span>(tokens)</span><br></pre></td></tr></table></figure>
+
+<h2 id="词频统计-📊"><a href="#词频统计-📊" class="headerlink" title="词频统计 📊"></a>词频统计 📊</h2><h3 id="统计词频"><a href="#统计词频" class="headerlink" title="统计词频"></a>统计词频</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> Counter</span><br><span class="line"></span><br><span class="line">word_counts = Counter(tokens)</span><br><span class="line"><span class="built_in">print</span>(word_counts)</span><br></pre></td></tr></table></figure>
+
+<h3 id="可视化词频"><a href="#可视化词频" class="headerlink" title="可视化词频"></a>可视化词频</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">word_freq_df = pd.DataFrame.from_dict(word_counts, orient=<span class="string">&#x27;index&#x27;</span>, columns=[<span class="string">&#x27;Frequency&#x27;</span>])</span><br><span class="line">word_freq_df.sort_values(by=<span class="string">&#x27;Frequency&#x27;</span>, ascending=<span class="literal">False</span>, inplace=<span class="literal">True</span>)</span><br><span class="line">word_freq_df.plot(kind=<span class="string">&#x27;bar&#x27;</span>, figsize=(<span class="number">10</span>, <span class="number">6</span>), color=<span class="string">&#x27;skyblue&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;Words&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Frequency&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;Word Frequency&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h2 id="情感分析-🌟"><a href="#情感分析-🌟" class="headerlink" title="情感分析 🌟"></a>情感分析 🌟</h2><p>情感分析是指对文本中的情感进行识别和分类，常见的情感包括积极、消极和中性。</p>
+<h3 id="使用-TextBlob-进行情感分析"><a href="#使用-TextBlob-进行情感分析" class="headerlink" title="使用 TextBlob 进行情感分析"></a>使用 TextBlob 进行情感分析</h3><p>TextBlob 是一个 Python 库，提供了简单易用的 API 来进行情感分析。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> textblob <span class="keyword">import</span> TextBlob</span><br><span class="line"></span><br><span class="line">text = <span class="string">&quot;I love Python!&quot;</span></span><br><span class="line">blob = TextBlob(text)</span><br><span class="line">sentiment_score = blob.sentiment.polarity</span><br><span class="line"><span class="built_in">print</span>(sentiment_score)</span><br></pre></td></tr></table></figure>
+
+<h2 id="主题建模-🧩"><a href="#主题建模-🧩" class="headerlink" title="主题建模 🧩"></a>主题建模 🧩</h2><p>主题建模是一种从文本中提取主题或话题的技术，常见的算法包括 Latent Dirichlet Allocation（LDA）。</p>
+<h3 id="使用-Gensim-进行-LDA-主题建模"><a href="#使用-Gensim-进行-LDA-主题建模" class="headerlink" title="使用 Gensim 进行 LDA 主题建模"></a>使用 Gensim 进行 LDA 主题建模</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> gensim <span class="keyword">import</span> corpora, models</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建语料库</span></span><br><span class="line">corpus = [word_tokenize(doc) <span class="keyword">for</span> doc <span class="keyword">in</span> documents]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建词袋模型</span></span><br><span class="line">dictionary = corpora.Dictionary(corpus)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 文档-词频矩阵</span></span><br><span class="line">doc_term_matrix = [dictionary.doc2bow(doc) <span class="keyword">for</span> doc <span class="keyword">in</span> corpus]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 LDA 模型</span></span><br><span class="line">lda_model = models.LdaModel(doc_term_matrix, num_topics=<span class="number">3</span>, id2word=dictionary, passes=<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印主题</span></span><br><span class="line"><span class="keyword">for</span> idx, topic <span class="keyword">in</span> lda_model.print_topics(-<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&#x27;Topic <span class="subst">&#123;idx&#125;</span>: <span class="subst">&#123;topic&#125;</span>&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="文本相似度计算-📏"><a href="#文本相似度计算-📏" class="headerlink" title="文本相似度计算 📏"></a>文本相似度计算 📏</h2><h3 id="使用-TF-IDF-计算文本相似度"><a href="#使用-TF-IDF-计算文本相似度" class="headerlink" title="使用 TF-IDF 计算文本相似度"></a>使用 TF-IDF 计算文本相似度</h3><p>TF-IDF（Term Frequency-Inverse Document Frequency）是一种用于评估单词在文档集或语料库中重要程度的统计方法。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics.pairwise <span class="keyword">import</span> cosine_similarity</span><br><span class="line"></span><br><span class="line">documents = [<span class="string">&quot;This is the first document.&quot;</span>,</span><br><span class="line">             <span class="string">&quot;This document is the second document.&quot;</span>,</span><br><span class="line">             <span class="string">&quot;And this is the third one.&quot;</span>,</span><br><span class="line">             <span class="string">&quot;Is this the first document?&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 计算 TF-IDF 向量</span></span><br><span class="line">tfidf_vectorizer = TfidfVectorizer()</span><br><span class="line">tfidf_matrix = tfidf_vectorizer.fit_transform(documents)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 计算余弦相似度</span></span><br><span class="line">cosine_similarities = cosine_similarity(tfidf_matrix[<span class="number">0</span>:<span class="number">1</span>], tfidf_matrix[<span class="number">1</span>:])</span><br><span class="line"><span class="built_in">print</span>(cosine_similarities)</span><br></pre></td></tr></table></figure>
+
+<p>以上是基于 Python 的文本分析的基础介绍。通过这些工具和技术，你可以开始进行文本数据的处理和分析。希望这个指南对你有所帮助！📚🔍</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/14.%F0%9F%93%9D%20Python%20%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90.html" data-id="cm0dt1x0y0005fstm2men1w89" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

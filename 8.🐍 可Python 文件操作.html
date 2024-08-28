@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="🐍 可Python 文件操作Python 提供了一些内置函数用于文件操作，比如读取和写入文件。让我们一起来看看吧！  1. 打开文件使用 open() 函数来打开文件。可以选择不同的模式：  &#39;r&#39;：只读（默认） &#39;w&#39;：写入（会覆盖文件） &#39;a&#39;：追加（在文件末尾写入） &#39;b&#39;：二进制模式  1file &#x3D; open(&quot;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/8.%F0%9F%90%8D%20%E5%8F%AFPython%20%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="🐍 可Python 文件操作Python 提供了一些内置函数用于文件操作，比如读取和写入文件。让我们一起来看看吧！  1. 打开文件使用 open() 函数来打开文件。可以选择不同的模式：  &#39;r&#39;：只读（默认） &#39;w&#39;：写入（会覆盖文件） &#39;a&#39;：追加（在文件末尾写入） &#39;b&#39;：二进制模式  1file &#x3D; open(&quot;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-28T12:00:28.680Z">
+<meta property="article:modified_time" content="2024-06-10T14:20:41.676Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/8.%F0%9F%90%8D%20%E5%8F%AFPython%20%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.html" class="article-date">
+  <time class="dt-published" datetime="2024-08-28T12:00:28.680Z" itemprop="datePublished">2024-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="🐍-可Python-文件操作"><a href="#🐍-可Python-文件操作" class="headerlink" title="🐍 可Python 文件操作"></a>🐍 可Python 文件操作</h3><p>Python 提供了一些内置函数用于文件操作，比如读取和写入文件。让我们一起来看看吧！</p>
+<hr>
+<h4 id="1-打开文件"><a href="#1-打开文件" class="headerlink" title="1. 打开文件"></a>1. 打开文件</h4><p>使用 <code>open()</code> 函数来打开文件。可以选择不同的模式：</p>
+<ul>
+<li><code>&#39;r&#39;</code>：只读（默认）</li>
+<li><code>&#39;w&#39;</code>：写入（会覆盖文件）</li>
+<li><code>&#39;a&#39;</code>：追加（在文件末尾写入）</li>
+<li><code>&#39;b&#39;</code>：二进制模式</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file = <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;r&quot;</span>)  <span class="comment"># 打开文件进行读取</span></span><br></pre></td></tr></table></figure>
+
+<p>别忘了使用完文件后关闭它：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file.close()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="2-读取文件"><a href="#2-读取文件" class="headerlink" title="2. 读取文件"></a>2. 读取文件</h4><p>有几种方法可以读取文件内容：</p>
+<ul>
+<li><code>read()</code>：读取整个文件</li>
+<li><code>readline()</code>：读取一行</li>
+<li><code>readlines()</code>：读取所有行并返回一个列表</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;r&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    content = file.read()  <span class="comment"># 读取整个文件</span></span><br><span class="line">    <span class="built_in">print</span>(content)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;r&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> file:</span><br><span class="line">        <span class="built_in">print</span>(line.strip())  <span class="comment"># 逐行读取并打印</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="3-写入文件"><a href="#3-写入文件" class="headerlink" title="3. 写入文件"></a>3. 写入文件</h4><p>使用 <code>write()</code> 方法写入文件内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;w&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(<span class="string">&quot;Hello, World!\n&quot;</span>)  <span class="comment"># 写入字符串</span></span><br><span class="line">    file.write(<span class="string">&quot;Welcome to Python file operations!\n&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>writelines()</code> 方法写入多个字符串：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">lines = [<span class="string">&quot;Line 1\n&quot;</span>, <span class="string">&quot;Line 2\n&quot;</span>, <span class="string">&quot;Line 3\n&quot;</span>]</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;w&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.writelines(lines)  <span class="comment"># 写入列表中的所有行</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="4-追加内容"><a href="#4-追加内容" class="headerlink" title="4. 追加内容"></a>4. 追加内容</h4><p>使用 <code>&#39;a&#39;</code> 模式在文件末尾追加内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;a&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(<span class="string">&quot;This is an appended line.\n&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="5-二进制文件"><a href="#5-二进制文件" class="headerlink" title="5. 二进制文件"></a>5. 二进制文件</h4><p>处理二进制文件，如图片、音频等：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;example.png&quot;</span>, <span class="string">&quot;rb&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    binary_content = file.read()  <span class="comment"># 读取二进制文件</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;copy_example.png&quot;</span>, <span class="string">&quot;wb&quot;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    file.write(binary_content)  <span class="comment"># 写入二进制文件</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="6-异常处理"><a href="#6-异常处理" class="headerlink" title="6. 异常处理"></a>6. 异常处理</h4><p>在文件操作中使用异常处理，确保文件正确关闭：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    file = <span class="built_in">open</span>(<span class="string">&quot;example.txt&quot;</span>, <span class="string">&quot;r&quot;</span>)</span><br><span class="line">    content = file.read()</span><br><span class="line">    <span class="built_in">print</span>(content)</span><br><span class="line"><span class="keyword">except</span> FileNotFoundError:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;File not found!&quot;</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    file.close()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><strong>打开文件</strong> 使用 <code>open()</code> 函数。</li>
+<li><strong>读取文件</strong> 使用 <code>read()</code>、<code>readline()</code> 或 <code>readlines()</code>。</li>
+<li><strong>写入文件</strong> 使用 <code>write()</code> 或 <code>writelines()</code>。</li>
+<li><strong>追加内容</strong> 使用 <code>&#39;a&#39;</code> 模式。</li>
+<li><strong>处理二进制文件</strong> 使用 <code>&#39;rb&#39;</code> 和 <code>&#39;wb&#39;</code> 模式。</li>
+<li><strong>异常处理</strong> 确保文件正确关闭。</li>
+</ul>
+<p>希望这个简洁的讲解对你有帮助！如果有问题，随时问我哦！😊</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/8.%F0%9F%90%8D%20%E5%8F%AFPython%20%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.html" data-id="cm0dt1x11000bfstm4sn20j85" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="📊 Matplotlib 模块讲解Matplotlib 是 Python 中最流行的绘图库之一，用于创建各种静态、动态和交互式的可视化图表。让我们来深入了解 Matplotlib 吧！🎉 安装 Matplotlib 🍎在使用 Matplotlib 之前，需要确保已安装该库。使用以下命令进行安装： 1pip install matplotlib  导入 Matplotlib 🍊导入 Matp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/11.%F0%9F%93%8A%20Matplotlib%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="📊 Matplotlib 模块讲解Matplotlib 是 Python 中最流行的绘图库之一，用于创建各种静态、动态和交互式的可视化图表。让我们来深入了解 Matplotlib 吧！🎉 安装 Matplotlib 🍎在使用 Matplotlib 之前，需要确保已安装该库。使用以下命令进行安装： 1pip install matplotlib  导入 Matplotlib 🍊导入 Matp">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-28T12:00:28.699Z">
+<meta property="article:modified_time" content="2024-06-10T14:33:22.899Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/11.%F0%9F%93%8A%20Matplotlib%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html" class="article-date">
+  <time class="dt-published" datetime="2024-08-28T12:00:28.699Z" itemprop="datePublished">2024-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="📊-Matplotlib-模块讲解"><a href="#📊-Matplotlib-模块讲解" class="headerlink" title="📊 Matplotlib 模块讲解"></a>📊 Matplotlib 模块讲解</h1><p>Matplotlib 是 Python 中最流行的绘图库之一，用于创建各种静态、动态和交互式的可视化图表。让我们来深入了解 Matplotlib 吧！🎉</p>
+<h2 id="安装-Matplotlib-🍎"><a href="#安装-Matplotlib-🍎" class="headerlink" title="安装 Matplotlib 🍎"></a>安装 Matplotlib 🍎</h2><p>在使用 Matplotlib 之前，需要确保已安装该库。使用以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install matplotlib</span><br></pre></td></tr></table></figure>
+
+<h2 id="导入-Matplotlib-🍊"><a href="#导入-Matplotlib-🍊" class="headerlink" title="导入 Matplotlib 🍊"></a>导入 Matplotlib 🍊</h2><p>导入 Matplotlib 的常用方法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建简单的图表-🍉"><a href="#创建简单的图表-🍉" class="headerlink" title="创建简单的图表 🍉"></a>创建简单的图表 🍉</h2><h3 id="折线图"><a href="#折线图" class="headerlink" title="折线图"></a>折线图</h3><p>折线图是最简单也是最常用的图表之一。下面是一个简单的折线图示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">y = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">11</span>]</span><br><span class="line"></span><br><span class="line">plt.plot(x, y)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;X轴&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Y轴&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;简单折线图&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：绘制股票价格变化"><a href="#应用实例：绘制股票价格变化" class="headerlink" title="应用实例：绘制股票价格变化"></a>应用实例：绘制股票价格变化</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">days = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">prices = [<span class="number">100</span>, <span class="number">101</span>, <span class="number">102</span>, <span class="number">98</span>, <span class="number">105</span>]</span><br><span class="line"></span><br><span class="line">plt.plot(days, prices, marker=<span class="string">&#x27;o&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;天数&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;价格&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;股票价格变化&#x27;</span>)</span><br><span class="line">plt.grid(<span class="literal">True</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h2 id="散点图-🍇"><a href="#散点图-🍇" class="headerlink" title="散点图 🍇"></a>散点图 🍇</h2><p>散点图用于展示两个变量之间的关系：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">y = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">11</span>]</span><br><span class="line"></span><br><span class="line">plt.scatter(x, y)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;X轴&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Y轴&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;简单散点图&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：绘制学生成绩分布"><a href="#应用实例：绘制学生成绩分布" class="headerlink" title="应用实例：绘制学生成绩分布"></a>应用实例：绘制学生成绩分布</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">math_scores = np.random.randint(<span class="number">50</span>, <span class="number">100</span>, <span class="number">30</span>)</span><br><span class="line">science_scores = np.random.randint(<span class="number">50</span>, <span class="number">100</span>, <span class="number">30</span>)</span><br><span class="line"></span><br><span class="line">plt.scatter(math_scores, science_scores)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;数学成绩&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;科学成绩&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;学生成绩分布&#x27;</span>)</span><br><span class="line">plt.grid(<span class="literal">True</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h2 id="条形图-🍒"><a href="#条形图-🍒" class="headerlink" title="条形图 🍒"></a>条形图 🍒</h2><p>条形图用于展示分类数据：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">categories = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;D&#x27;</span>]</span><br><span class="line">values = [<span class="number">3</span>, <span class="number">7</span>, <span class="number">5</span>, <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line">plt.bar(categories, values)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;类别&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;值&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;简单条形图&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：展示公司季度销售额"><a href="#应用实例：展示公司季度销售额" class="headerlink" title="应用实例：展示公司季度销售额"></a>应用实例：展示公司季度销售额</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">quarters = [<span class="string">&#x27;Q1&#x27;</span>, <span class="string">&#x27;Q2&#x27;</span>, <span class="string">&#x27;Q3&#x27;</span>, <span class="string">&#x27;Q4&#x27;</span>]</span><br><span class="line">sales = [<span class="number">15000</span>, <span class="number">20000</span>, <span class="number">18000</span>, <span class="number">22000</span>]</span><br><span class="line"></span><br><span class="line">plt.bar(quarters, sales, color=<span class="string">&#x27;skyblue&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;季度&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;销售额&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;公司季度销售额&#x27;</span>)</span><br><span class="line">plt.grid(axis=<span class="string">&#x27;y&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h2 id="直方图-🍍"><a href="#直方图-🍍" class="headerlink" title="直方图 🍍"></a>直方图 🍍</h2><p>直方图用于展示数据分布：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">data = np.random.randn(<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line">plt.hist(data, bins=<span class="number">30</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;值&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;频率&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;简单直方图&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：展示考试成绩分布"><a href="#应用实例：展示考试成绩分布" class="headerlink" title="应用实例：展示考试成绩分布"></a>应用实例：展示考试成绩分布</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">scores = np.random.randint(<span class="number">0</span>, <span class="number">100</span>, <span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">plt.hist(scores, bins=<span class="number">10</span>, color=<span class="string">&#x27;purple&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;成绩&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;频率&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;考试成绩分布&#x27;</span>)</span><br><span class="line">plt.grid(<span class="literal">True</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h2 id="饼图-🍑"><a href="#饼图-🍑" class="headerlink" title="饼图 🍑"></a>饼图 🍑</h2><p>饼图用于展示组成部分比例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">labels = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;D&#x27;</span>]</span><br><span class="line">sizes = [<span class="number">15</span>, <span class="number">30</span>, <span class="number">45</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line">plt.pie(sizes, labels=labels, autopct=<span class="string">&#x27;%1.1f%%&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;简单饼图&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：展示市场份额"><a href="#应用实例：展示市场份额" class="headerlink" title="应用实例：展示市场份额"></a>应用实例：展示市场份额</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">companies = [<span class="string">&#x27;公司A&#x27;</span>, <span class="string">&#x27;公司B&#x27;</span>, <span class="string">&#x27;公司C&#x27;</span>, <span class="string">&#x27;公司D&#x27;</span>]</span><br><span class="line">market_share = [<span class="number">25</span>, <span class="number">35</span>, <span class="number">30</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line">plt.pie(market_share, labels=companies, autopct=<span class="string">&#x27;%1.1f%%&#x27;</span>, startangle=<span class="number">140</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;市场份额&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h2 id="子图-🍬"><a href="#子图-🍬" class="headerlink" title="子图 🍬"></a>子图 🍬</h2><p>使用子图可以在一个图表中展示多个图：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">y1 = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">11</span>]</span><br><span class="line">y2 = [<span class="number">1</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">plt.plot(x, y1)</span><br><span class="line">plt.title(<span class="string">&#x27;子图 1&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">plt.plot(x, y2)</span><br><span class="line">plt.title(<span class="string">&#x27;子图 2&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：展示不同城市的温度变化"><a href="#应用实例：展示不同城市的温度变化" class="headerlink" title="应用实例：展示不同城市的温度变化"></a>应用实例：展示不同城市的温度变化</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">days = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">city1_temps = [<span class="number">22</span>, <span class="number">24</span>, <span class="number">19</span>, <span class="number">23</span>, <span class="number">25</span>]</span><br><span class="line">city2_temps = [<span class="number">18</span>, <span class="number">21</span>, <span class="number">20</span>, <span class="number">22</span>, <span class="number">24</span>]</span><br><span class="line"></span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">plt.plot(days, city1_temps, marker=<span class="string">&#x27;o&#x27;</span>, color=<span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;城市1的温度变化&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;天数&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;温度&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">plt.plot(days, city2_temps, marker=<span class="string">&#x27;o&#x27;</span>, color=<span class="string">&#x27;red&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;城市2的温度变化&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;天数&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;温度&#x27;</span>)</span><br><span class="line"></span><br><span class="line">plt.tight_layout()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义图表-🍇"><a href="#自定义图表-🍇" class="headerlink" title="自定义图表 🍇"></a>自定义图表 🍇</h2><h3 id="设置图例"><a href="#设置图例" class="headerlink" title="设置图例"></a>设置图例</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">y1 = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">11</span>]</span><br><span class="line">y2 = [<span class="number">1</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">10</span>]</span><br><span class="line"></span><br><span class="line">plt.plot(x, y1, label=<span class="string">&#x27;线1&#x27;</span>)</span><br><span class="line">plt.plot(x, y2, label=<span class="string">&#x27;线2&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;X轴&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Y轴&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;带图例的折线图&#x27;</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置网格"><a href="#设置网格" class="headerlink" title="设置网格"></a>设置网格</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">y = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">11</span>]</span><br><span class="line"></span><br><span class="line">plt.plot(x, y)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;X轴&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Y轴&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;带网格的折线图&#x27;</span>)</span><br><span class="line">plt.grid(<span class="literal">True</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：展示公司年度收益变化"><a href="#应用实例：展示公司年度收益变化" class="headerlink" title="应用实例：展示公司年度收益变化"></a>应用实例：展示公司年度收益变化</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">years = [<span class="number">2016</span>, <span class="number">2017</span>, <span class="number">2018</span>, <span class="number">2019</span>, <span class="number">2020</span>]</span><br><span class="line">revenue = [<span class="number">45000</span>, <span class="number">48000</span>, <span class="number">50000</span>, <span class="number">52000</span>, <span class="number">58000</span>]</span><br><span class="line"></span><br><span class="line">plt.plot(years, revenue, marker=<span class="string">&#x27;o&#x27;</span>, color=<span class="string">&#x27;green&#x27;</span>, label=<span class="string">&#x27;年度收益&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;年份&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;收益&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;公司年度收益变化&#x27;</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.grid(<span class="literal">True</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p>希望这些详细的例子能帮助你更好地理解和使用 Matplotlib 进行数据可视化！Happy Coding! 💻📊</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/11.%F0%9F%93%8A%20Matplotlib%20%E6%A8%A1%E5%9D%97%E8%AE%B2%E8%A7%A3.html" data-id="cm0dt1x0w0002fstm098b4twe" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="🐍 Python 循环语句讲解循环语句是编程中的重要结构，它允许我们重复执行某段代码，直到满足特定条件。Python 中主要有两种循环：for 循环和 while 循环。让我们详细了解它们的用法吧！🎉 for 循环 🍎基本用法for 循环用于遍历序列（如列表、元组、字符串等）中的每个元素。 1234fruits &#x3D; [&quot;apple&quot;, &quot;banana&quot;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/5.%F0%9F%90%8D%20Python%20%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="🐍 Python 循环语句讲解循环语句是编程中的重要结构，它允许我们重复执行某段代码，直到满足特定条件。Python 中主要有两种循环：for 循环和 while 循环。让我们详细了解它们的用法吧！🎉 for 循环 🍎基本用法for 循环用于遍历序列（如列表、元组、字符串等）中的每个元素。 1234fruits &#x3D; [&quot;apple&quot;, &quot;banana&quot;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-28T12:00:28.878Z">
+<meta property="article:modified_time" content="2024-06-10T14:08:22.220Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/5.%F0%9F%90%8D%20Python%20%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5.html" class="article-date">
+  <time class="dt-published" datetime="2024-08-28T12:00:28.878Z" itemprop="datePublished">2024-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="🐍-Python-循环语句讲解"><a href="#🐍-Python-循环语句讲解" class="headerlink" title="🐍 Python 循环语句讲解"></a>🐍 Python 循环语句讲解</h1><p>循环语句是编程中的重要结构，它允许我们重复执行某段代码，直到满足特定条件。Python 中主要有两种循环：<code>for</code> 循环和 <code>while</code> 循环。让我们详细了解它们的用法吧！🎉</p>
+<h2 id="for-循环-🍎"><a href="#for-循环-🍎" class="headerlink" title="for 循环 🍎"></a>for 循环 🍎</h2><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p><code>for</code> 循环用于遍历序列（如列表、元组、字符串等）中的每个元素。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fruits = [<span class="string">&quot;apple&quot;</span>, <span class="string">&quot;banana&quot;</span>, <span class="string">&quot;cherry&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> fruit <span class="keyword">in</span> fruits:</span><br><span class="line">    <span class="built_in">print</span>(fruit)</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：计算列表中所有数字的平方"><a href="#应用实例：计算列表中所有数字的平方" class="headerlink" title="应用实例：计算列表中所有数字的平方"></a>应用实例：计算列表中所有数字的平方</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">squares = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> number <span class="keyword">in</span> numbers:</span><br><span class="line">    squares.append(number ** <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(squares)  <span class="comment"># 输出 [1, 4, 9, 16, 25]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="range-函数-🍊"><a href="#range-函数-🍊" class="headerlink" title="range 函数 🍊"></a>range 函数 🍊</h3><p><code>range</code> 函数生成一个整数序列，常与 <code>for</code> 循环一起使用。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：计算前-10-个自然数的和"><a href="#应用实例：计算前-10-个自然数的和" class="headerlink" title="应用实例：计算前 10 个自然数的和"></a>应用实例：计算前 10 个自然数的和</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">total = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">11</span>):</span><br><span class="line">    total += i</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(total)  <span class="comment"># 输出 55</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="while-循环-🍉"><a href="#while-循环-🍉" class="headerlink" title="while 循环 🍉"></a>while 循环 🍉</h2><h3 id="基本用法-1"><a href="#基本用法-1" class="headerlink" title="基本用法"></a>基本用法</h3><p><code>while</code> 循环在条件为真时重复执行代码块。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">count = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> count &lt; <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(count)</span><br><span class="line">    count += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：计算-1-到-100-的和"><a href="#应用实例：计算-1-到-100-的和" class="headerlink" title="应用实例：计算 1 到 100 的和"></a>应用实例：计算 1 到 100 的和</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">total = <span class="number">0</span></span><br><span class="line">i = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">100</span>:</span><br><span class="line">    total += i</span><br><span class="line">    i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(total)  <span class="comment"># 输出 5050</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="break-和-continue-语句-🍇"><a href="#break-和-continue-语句-🍇" class="headerlink" title="break 和 continue 语句 🍇"></a>break 和 continue 语句 🍇</h2><h3 id="break-语句"><a href="#break-语句" class="headerlink" title="break 语句"></a>break 语句</h3><p><code>break</code> 语句用于提前退出循环。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    <span class="keyword">if</span> i == <span class="number">5</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：查找第一个大于-50-的偶数"><a href="#应用实例：查找第一个大于-50-的偶数" class="headerlink" title="应用实例：查找第一个大于 50 的偶数"></a>应用实例：查找第一个大于 50 的偶数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">10</span>, <span class="number">25</span>, <span class="number">30</span>, <span class="number">55</span>, <span class="number">60</span>, <span class="number">70</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> number <span class="keyword">in</span> numbers:</span><br><span class="line">    <span class="keyword">if</span> number &gt; <span class="number">50</span> <span class="keyword">and</span> number % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;第一个大于50的偶数是: <span class="subst">&#123;number&#125;</span>&quot;</span>)  <span class="comment"># 输出 &quot;第一个大于50的偶数是: 60&quot;</span></span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="continue-语句"><a href="#continue-语句" class="headerlink" title="continue 语句"></a>continue 语句</h3><p><code>continue</code> 语句用于跳过当前循环的剩余语句，直接开始下一次循环。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：计算-1-到-10-中所有奇数的平方"><a href="#应用实例：计算-1-到-10-中所有奇数的平方" class="headerlink" title="应用实例：计算 1 到 10 中所有奇数的平方"></a>应用实例：计算 1 到 10 中所有奇数的平方</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">squares = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">11</span>):</span><br><span class="line">    <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    squares.append(i ** <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(squares)  <span class="comment"># 输出 [1, 9, 25, 49, 81]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="嵌套循环-🍒"><a href="#嵌套循环-🍒" class="headerlink" title="嵌套循环 🍒"></a>嵌套循环 🍒</h2><h3 id="基本用法-2"><a href="#基本用法-2" class="headerlink" title="基本用法"></a>基本用法</h3><p>嵌套循环是指在一个循环体内再包含一个循环。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;i: <span class="subst">&#123;i&#125;</span>, j: <span class="subst">&#123;j&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：输出一个-3x3-的乘法表"><a href="#应用实例：输出一个-3x3-的乘法表" class="headerlink" title="应用实例：输出一个 3x3 的乘法表"></a>应用实例：输出一个 3x3 的乘法表</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">4</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">4</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;i&#125;</span> * <span class="subst">&#123;j&#125;</span> = <span class="subst">&#123;i * j&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="循环与-else-语句-🍍"><a href="#循环与-else-语句-🍍" class="headerlink" title="循环与 else 语句 🍍"></a>循环与 else 语句 🍍</h2><h3 id="基本用法-3"><a href="#基本用法-3" class="headerlink" title="基本用法"></a>基本用法</h3><p>在循环正常结束后，执行 <code>else</code> 语句块。如果循环被 <code>break</code> 语句打断，则不执行 <code>else</code> 语句块。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;循环正常结束&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用实例：查找元素并反馈"><a href="#应用实例：查找元素并反馈" class="headerlink" title="应用实例：查找元素并反馈"></a>应用实例：查找元素并反馈</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span>]</span><br><span class="line">target = <span class="number">35</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> number <span class="keyword">in</span> numbers:</span><br><span class="line">    <span class="keyword">if</span> number == target:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;找到目标数: <span class="subst">&#123;number&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;目标数 <span class="subst">&#123;target&#125;</span> 不在列表中&quot;</span>)  <span class="comment"># 输出 &quot;目标数 35 不在列表中&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="综合实例-🌟"><a href="#综合实例-🌟" class="headerlink" title="综合实例 🌟"></a>综合实例 🌟</h2><h3 id="实例：输出一个乘法表"><a href="#实例：输出一个乘法表" class="headerlink" title="实例：输出一个乘法表"></a>实例：输出一个乘法表</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;i&#125;</span> * <span class="subst">&#123;j&#125;</span> = <span class="subst">&#123;i * j&#125;</span>&quot;</span>, end=<span class="string">&quot;\t&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
+
+<h3 id="实例：猜数字游戏"><a href="#实例：猜数字游戏" class="headerlink" title="实例：猜数字游戏"></a>实例：猜数字游戏</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">target = random.randint(<span class="number">1</span>, <span class="number">100</span>)</span><br><span class="line">guess = <span class="literal">None</span></span><br><span class="line">attempts = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> guess != target:</span><br><span class="line">    guess = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;猜一个 1 到 100 之间的数字: &quot;</span>))</span><br><span class="line">    attempts += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> guess &lt; target:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;太小了！&quot;</span>)</span><br><span class="line">    <span class="keyword">elif</span> guess &gt; target:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;太大了！&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;恭喜你，猜对了！你一共猜了 <span class="subst">&#123;attempts&#125;</span> 次。&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>希望这些详细的例子能帮助你更好地理解和使用 Python 中的循环语句！Happy Coding! 💻🎉</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/5.%F0%9F%90%8D%20Python%20%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5.html" data-id="cm0dt1x100008fstm5sjheeoc" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/28/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
